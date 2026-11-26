@@ -1,0 +1,338 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Yousef Ahmed — AI &amp; Machine Learning Engineer</title>
+  <meta name="description" content="Portfolio of Yousef Ahmed, an aspiring AI and Machine Learning engineer studying AI and Data Science. Featured: Crop Risk, a yield-risk forecasting tool for Egyptian crops.">
+  <meta name="theme-color" content="#f6f2e8">
+  <meta property="og:title" content="Yousef Ahmed — AI & Machine Learning Engineer">
+  <meta property="og:description" content="Machine learning for real-world decisions. Featured project: Crop Risk.">
+  <meta property="og:type" content="website">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%231f3d2b'/%3E%3Ctext x='32' y='43' font-family='Georgia,serif' font-size='30' font-weight='700' text-anchor='middle' fill='%23f6f2e8'%3EYA%3C/text%3E%3Ccircle cx='51' cy='15' r='6' fill='%23c8f169'/%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header" id="top">
+    <nav class="nav" aria-label="Primary">
+      <a class="brand" href="#home" aria-label="Yousef Ahmed, home">
+        <span class="brand__mark" aria-hidden="true">YA</span>
+        <span class="brand__name">Yousef Ahmed</span>
+      </a>
+
+      <button class="nav__toggle" type="button" aria-expanded="false" aria-controls="nav-menu">
+        <span class="sr-only">Menu</span>
+        <span class="nav__bars" aria-hidden="true"></span>
+      </button>
+
+      <div class="nav__menu" id="nav-menu">
+        <ul class="nav__links">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li data-config="education" hidden><a href="#education">Education</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+        <a class="btn btn--small btn--dark" data-config="cv" href="#" download hidden>
+          Download CV
+          <svg viewBox="0 0 20 20" width="16" height="16" aria-hidden="true"><path d="M10 3v9m0 0 3.5-3.5M10 12 6.5 8.5M4 15.5h12" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </a>
+      </div>
+    </nav>
+  </header>
+
+  <main id="main">
+
+    <!-- HERO -->
+    <section class="hero" id="home" aria-labelledby="hero-title">
+      <div class="hero__grid">
+        <div class="hero__copy">
+          <p class="eyebrow"><span class="dot" aria-hidden="true"></span>AI &amp; Data Science</p>
+          <h1 id="hero-title" class="hero__title">
+            Machine learning,<br>
+            built for <em>real&nbsp;decisions.</em>
+          </h1>
+          <p class="hero__lead">
+            I'm <strong>Yousef Ahmed</strong>, an aspiring AI &amp; Machine Learning Engineer.
+            I turn public data into forecasts people can actually use, and I'm open
+            about what the numbers can and can't tell you.
+          </p>
+          <div class="hero__actions">
+            <a class="btn btn--primary" href="#projects">
+              View featured project
+              <svg viewBox="0 0 20 20" width="16" height="16" aria-hidden="true"><path d="M4 10h12m0 0-4-4m4 4-4 4" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </a>
+            <a class="btn btn--ghost" href="#contact">Get in touch</a>
+          </div>
+          <dl class="hero__facts">
+            <div><dt>Focus</dt><dd>Machine Learning</dd></div>
+            <div><dt>Language</dt><dd>Python</dd></div>
+            <div><dt>Projects</dt><dd>2 shipped &amp; live</dd></div>
+          </dl>
+        </div>
+
+        <figure class="hero__visual">
+          <div class="portrait">
+            <img
+              src="assets/yousef.jpg"
+              srcset="assets/yousef-sm.jpg 480w, assets/yousef.jpg 1000w"
+              sizes="(max-width: 900px) 80vw, 460px"
+              width="1000" height="1000"
+              alt="Portrait of Yousef Ahmed, smiling outdoors in a red t-shirt"
+              fetchpriority="high">
+          </div>
+          <svg class="trace" viewBox="0 0 220 90" role="img" aria-label="Illustration of a line chart with a dashed forecast segment">
+            <rect width="220" height="90" fill="#fbf9f2"/>
+            <path d="M8 62 C28 56 36 66 54 48 S86 40 104 46 128 30 146 34" fill="none" stroke="#1f3d2b" stroke-width="2.2" stroke-linecap="round"/>
+            <path d="M146 34 C162 30 176 20 212 14" fill="none" stroke="#1f3d2b" stroke-width="2.2" stroke-dasharray="4 5" stroke-linecap="round"/>
+            <circle cx="146" cy="34" r="4.5" fill="#c8f169" stroke="#1f3d2b" stroke-width="1.6"/>
+            <text x="10" y="82" font-family="Inter,sans-serif" font-size="8.5" fill="#6b6f68">history</text>
+            <text x="172" y="82" font-family="Inter,sans-serif" font-size="8.5" fill="#6b6f68">forecast</text>
+          </svg>
+        </figure>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section class="section about" id="about" aria-labelledby="about-title">
+      <div class="section__head">
+        <p class="section__index">01</p>
+        <h2 id="about-title" class="section__title">About</h2>
+      </div>
+      <div class="about__grid">
+        <p class="about__statement">
+          I study <em>AI and Data Science</em> and I learn best by shipping things people can open and try.
+        </p>
+        <div class="about__body">
+          <p>
+            My work so far sits where data meets a practical question: given what has happened before,
+            what is likely to happen next, and how confident should we be? I enjoy the full path from
+            raw public data to a working, documented tool, not just the model in the middle.
+          </p>
+          <p>
+            That is how I approached <strong>Crop Risk</strong>: real agricultural data, several forecasting
+            models compared on held-out years, and a published list of the assumptions and weak spots.
+            I'm building toward a career as an AI &amp; Machine Learning Engineer, and I care about
+            work that is honest, reproducible and useful.
+          </p>
+          <ul class="interests" aria-label="Technical interests">
+            <li>Forecasting &amp; regression</li>
+            <li>Model evaluation</li>
+            <li>Applied data analysis</li>
+            <li>ML served as APIs</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section class="section skills" id="skills" aria-labelledby="skills-title">
+      <div class="section__head">
+        <p class="section__index">02</p>
+        <h2 id="skills-title" class="section__title">Skills</h2>
+        <p class="section__sub">Each skill below is one I've used in a project on this page.</p>
+      </div>
+
+      <div class="skills__grid">
+        <article class="skill">
+          <h3>Python</h3>
+          <p>Core language for data work and modelling.</p>
+          <p class="skill__used">Used in <a href="#crop-risk">Crop Risk</a></p>
+        </article>
+        <article class="skill">
+          <h3>Machine Learning</h3>
+          <p>Linear and polynomial regression, random forests, a naive baseline, and a drop-probability classifier.</p>
+          <p class="skill__used">Used in <a href="#crop-risk">Crop Risk</a></p>
+        </article>
+        <article class="skill">
+          <h3>Model Evaluation</h3>
+          <p>Time-based train/test split, out-of-sample error across models, and AUC for the classifier.</p>
+          <p class="skill__used">Used in <a href="#crop-risk">Crop Risk</a></p>
+        </article>
+        <article class="skill">
+          <h3>Data Analysis</h3>
+          <p>Working with FAOSTAT crop records for 77 crops across 35 years, and flagging estimated values.</p>
+          <p class="skill__used">Used in <a href="#crop-risk">Crop Risk</a></p>
+        </article>
+        <article class="skill">
+          <h3>APIs &amp; Deployment</h3>
+          <p>A documented REST API with interactive docs, deployed on Modal.</p>
+          <p class="skill__used">Used in <a href="#crop-risk">Crop Risk</a></p>
+        </article>
+        <article class="skill">
+          <h3>Web Front-end</h3>
+          <p>HTML, CSS and JavaScript for responsive pages with validated forms, hosted on GitHub Pages.</p>
+          <p class="skill__used">Used in <a href="#golden-palace">The Golden Palace</a></p>
+        </article>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section class="section projects" id="projects" aria-labelledby="projects-title">
+      <div class="section__head">
+        <p class="section__index">03</p>
+        <h2 id="projects-title" class="section__title">Projects</h2>
+      </div>
+
+      <!-- Featured case study -->
+      <article class="case" id="crop-risk" aria-labelledby="case-title">
+        <div class="case__intro">
+          <p class="tag tag--lime">Featured case study</p>
+          <h3 id="case-title" class="case__title">Crop Risk <span class="case__ar" lang="ar" dir="rtl">مخاطر المحاصيل</span></h3>
+          <p class="case__summary">
+            A machine-learning tool that estimates an Egyptian crop's next-season risk from its own yield history,
+            the water it receives, its soil and its growth stage.
+          </p>
+          <div class="case__links">
+            <a class="btn btn--primary" href="https://crop-risk--api.modal.run/" target="_blank" rel="noopener noreferrer">
+              Open live app
+              <svg viewBox="0 0 20 20" width="16" height="16" aria-hidden="true"><path d="M7 13 13 7M8 7h5v5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </a>
+            <a class="btn btn--ghost" href="https://crop-risk--api.modal.run/docs" target="_blank" rel="noopener noreferrer">API docs</a>
+            <a class="btn btn--ghost" href="https://crop-risk--api.modal.run/v1/meta" target="_blank" rel="noopener noreferrer">Rules &amp; assumptions</a>
+          </div>
+        </div>
+
+        <div class="case__stats" role="list">
+          <div role="listitem"><strong>77</strong><span>crops with ≥ 4 years of data</span></div>
+          <div role="listitem"><strong>35</strong><span>years of data, 1990–2024</span></div>
+          <div role="listitem"><strong>2,645</strong><span>yield records</span></div>
+          <div role="listitem"><strong>4</strong><span>forecast models to compare</span></div>
+        </div>
+
+        <div class="case__body">
+          <section class="case__block" aria-labelledby="cb-problem">
+            <h4 id="cb-problem">The problem</h4>
+            <p>
+              Yield forecasts alone don't say how much a season can go wrong. Crop Risk turns a crop's own history
+              into a risk estimate and adjusts it for the conditions a farmer can actually influence or observe,
+              such as how much of the crop's water requirement is supplied.
+            </p>
+          </section>
+
+          <section class="case__block" aria-labelledby="cb-approach">
+            <h4 id="cb-approach">How it works</h4>
+            <ol class="steps">
+              <li><span>Data</span> FAOSTAT crop yields for Egypt (QCL, 1990–2024), in kg/ha.</li>
+              <li><span>Forecast</span> The user picks a model: naive baseline, polynomial, linear regression or random forest. Models are compared by out-of-sample error on the held-out years 2016–2024.</li>
+              <li><span>Adjust</span> Water supplied (as a % of requirement), soil type and growth stage feed into the risk estimate. Stage sensitivity coefficients (Ky) are sourced for wheat only.</li>
+              <li><span>Report</span> A risk result for the next season, with its source explained. A separate model estimates the probability of a yield drop of 10% or more.</li>
+            </ol>
+          </section>
+
+          <section class="case__block" aria-labelledby="cb-inputs">
+            <h4 id="cb-inputs">Inputs</h4>
+            <ul class="chips" aria-label="Inputs">
+              <li>Crop</li>
+              <li>Soil: loam, clay, sandy, saline</li>
+              <li>Water received (%)</li>
+              <li>Growth stage: vegetative → ripening</li>
+              <li>Forecast model</li>
+            </ul>
+          </section>
+
+          <section class="case__block" aria-labelledby="cb-features">
+            <h4 id="cb-features">Key features</h4>
+            <ul class="ticks">
+              <li>Fully bilingual interface, English and Arabic.</li>
+              <li>Documented API with interactive Swagger docs.</li>
+              <li>Machine-readable rules endpoint listing every assumption.</li>
+              <li>Deployed live on Modal.</li>
+            </ul>
+          </section>
+
+          <aside class="case__honest" aria-labelledby="cb-honest">
+            <h4 id="cb-honest">Known limitations, stated openly</h4>
+            <p>The project publishes its own caveats, and so do I:</p>
+            <ul>
+              <li>The drop-probability model is a weak signal, with AUC around 0.6 (0.5 is random).</li>
+              <li>About 32% of the FAOSTAT values are estimated or imputed, not official.</li>
+              <li>Soil points, non-wheat Ky values and the 15 / 35 risk bands are assumptions or presentation choices, not validated cut-offs.</li>
+            </ul>
+          </aside>
+
+          <p class="case__tech"><strong>Built with:</strong> Python · regression &amp; random-forest models · FAOSTAT data · REST API · Modal</p>
+        </div>
+      </article>
+
+      <!-- Second project -->
+      <article class="project" id="golden-palace" aria-labelledby="gp-title">
+        <div class="project__meta">
+          <p class="tag">Web project</p>
+          <h3 id="gp-title">The Golden Palace</h3>
+        </div>
+        <div class="project__body">
+          <p>
+            A responsive luxury-hotel website with a suite showcase and a hotel reservation form.
+            The form covers guest name, email, check-in and check-out dates and room choice
+            (Deluxe, Junior Suite or Presidential Suite), with field validation and a confirmation message.
+          </p>
+          <p class="project__tech"><strong>Built with:</strong> HTML · CSS · JavaScript · GitHub Pages</p>
+          <a class="link-arrow" href="https://hopamohamed768-code.github.io/the_golden_palace/" target="_blank" rel="noopener noreferrer">
+            View live site
+            <svg viewBox="0 0 20 20" width="16" height="16" aria-hidden="true"><path d="M7 13 13 7M8 7h5v5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </a>
+        </div>
+      </article>
+    </section>
+
+    <!-- EDUCATION (shown only when filled in site.config.js) -->
+    <section class="section education" id="education" aria-labelledby="edu-title" data-config="education" hidden>
+      <div class="section__head">
+        <p class="section__index">04</p>
+        <h2 id="edu-title" class="section__title">Education</h2>
+      </div>
+      <ol class="timeline" id="education-list"></ol>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="section contact" id="contact" aria-labelledby="contact-title">
+      <div class="contact__panel">
+        <div>
+          <p class="section__index section__index--light" id="contact-index">04</p>
+          <h2 id="contact-title" class="contact__title">Let's talk about <em>data&nbsp;&amp;&nbsp;AI.</em></h2>
+          <p class="contact__lead">
+            I'm happy to discuss my projects, share how I built them, or hear about opportunities in machine learning.
+          </p>
+        </div>
+        <ul class="contact__list">
+          <li data-config="email" hidden>
+            <span>Email</span>
+            <a id="email-link" href="#"></a>
+          </li>
+          <li>
+            <span>LinkedIn</span>
+            <a href="https://www.linkedin.com/in/yousef-ahmed-404849357" target="_blank" rel="noopener noreferrer">linkedin.com/in/yousef-ahmed-404849357</a>
+          </li>
+          <li>
+            <span>GitHub</span>
+            <a href="https://github.com/yousefahmedyy596-lab" target="_blank" rel="noopener noreferrer">github.com/yousefahmedyy596-lab</a>
+          </li>
+        </ul>
+        <a class="btn btn--lime" data-config="cv" href="#" download hidden>
+          Download my CV
+          <svg viewBox="0 0 20 20" width="16" height="16" aria-hidden="true"><path d="M10 3v9m0 0 3.5-3.5M10 12 6.5 8.5M4 15.5h12" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>© <span id="year">2026</span> Yousef Ahmed</p>
+    <ul class="footer__links">
+      <li><a href="https://www.linkedin.com/in/yousef-ahmed-404849357" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+      <li><a href="https://github.com/yousefahmedyy596-lab" target="_blank" rel="noopener noreferrer">GitHub</a></li>
+      <li><a href="#top">Back to top ↑</a></li>
+    </ul>
+  </footer>
+
+  <script src="site.config.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
